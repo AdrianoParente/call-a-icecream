@@ -1,0 +1,397 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+
+.headContainer {
+    background-color: #ff8000;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.headLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headLogo span {
+    margin-left: 8px;
+}
+
+.headCustomerPlace{
+    text-decoration: underline;;
+}
+
+.menuBar{
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bodyContainer {
+    display: flex;
+    border-right: 1px solid #d7d7d7;
+}
+
+.orderContainer {
+    width: 73%;
+    border-right: 1px solid #d7d7d7;
+}
+
+.basketContainer {
+    width: 27%;
+    right:0;
+    top:70px;
+    position: fixed;
+    
+}
+
+.orderHeadImg {
+    height: 200px;
+    background-image: url('img/eat-4989552_1920.jpg');
+    background-position: center;
+}
+
+.circleLogo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #d7d7d7;
+    position: relative;
+    right: -44%;
+    top: 135px;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descriptionShop {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 25px;
+    margin-left: 23px;
+}
+
+.descriptionShop h1 {
+    color: #0a3847;
+}
+
+.descriptionShop span {
+    color: rgb(110, 108, 108);
+}
+
+.menuSlider {
+    background-color: rgb(235, 231, 231);
+    height: 65px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0a3847;
+}
+
+.menuSlider a {
+    color: #0a3847;
+    text-decoration: none;
+}
+
+.menuSlider a:hover {
+    cursor: pointer;
+    color: #ff8000;
+}
+
+.dishContainer {
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.dishPicture1 {
+    height: 0px;
+}
+
+.dishPicture2 {
+    width: 100%;
+    height: 250px;
+    background-image: url('img/ice-cream-2202605_1280.jpg');
+    background-position: 100%, 60%;
+}
+
+.dishPicture3 {
+    width: 100%;
+    height: 250px;
+    background-image: url('img/ice-cream-sundae-1858287_1280.jpg');
+    background-position: center;
+}
+
+.dishsection {
+    background-color: rgb(235, 231, 231);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dishsection h2 {
+    margin-left: 12px;
+    color: #0a3847;
+}
+
+.dish {
+    border: 1px solid #d7d7d7;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dish h2 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: #0a3847;
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 3px;
+    margin-right: 4px;
+    margin-left: 15px;
+}
+
+.dish a {
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.dish span {
+    display: flex;
+    align-items: baseline;
+}
+
+.dish:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+#delieverSum {
+    display: none;
+}
+
+.price {
+    color: #ff8000;
+    font-size: 17px;
+    margin-top: 3px;
+    margin-bottom: 16px;
+    margin-left: 15px;
+}
+
+.basketHeadline {
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0a3847;
+    height: 50px;    
+}
+
+.basket {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(110, 108, 108);
+}
+
+.orderedDishBlank {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;;
+    height: 100px;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.orderedDish {
+    max-height: 100px;
+    overflow-y: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding-bottom: 25px;
+    font-size: 13px;
+    flex-direction: column;
+}
+
+.singleDishContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.commandBar{
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commandIcon{
+    width: 15px;
+    border: 1px solid #d7d7d7;
+    text-align: center;
+}
+
+.commandIcon:hover{
+    cursor: pointer;
+}
+
+.commandIconDelete:hover{
+    cursor: pointer;
+}
+
+.counter{
+    width: 25px;
+}
+
+.names{
+    width: 100px;
+}
+
+.prices{
+    width: 30px;
+}
+
+#minimumOrder{
+    display: none;
+}
+
+.bill {
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    display: flex;
+    flex-direction: column;
+}
+
+.billSum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.minimumOrder {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.min{
+    width: 70%;;
+    color: green;
+    font-size: 15px;
+}
+
+.submitOrder {
+    height: 60px;
+    text-align: center;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(105, 105, 105);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 100%;
+    height: 90px;
+    background-color: rgb(82, 80, 80);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media(max-width:950px){
+.bodyContainer{
+    flex-direction: column;
+}   
+
+.orderContainer{
+    width: 100%;
+}
+
+.basketContainer{
+
+    width:100%;
+    border: 1px solid #d7d7d7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: unset;
+}
+}
+
+@media(max-width:600px){
+.headCustomerPlace{
+    display: none;
+}
+
+.footer{
+    flex-direction: column;
+}
+}
+
+@media(max-width:300px){
+.circleLogo{
+    display: none;
+}
+
+.menuSlider{
+    flex-direction: column;
+    height: 7em;
+}
+
+.dish span{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dish span a{
+    margin-left: 15px;
+}
+
+.dishsection h2{
+font-size: 18px;
+}
+
+.headLogo{
+    display: none;
+}
+
+.bill h3{
+    font-size: 14px;
+}
+}

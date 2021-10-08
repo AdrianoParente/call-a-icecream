@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call-a-icecream</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onscroll="scrollableHeader()">
+    <div class="headContainer">
+        <div class="header">
+            <div class="headLogo">
+                <img src="img/delivery-food-32.png">
+                <span>call-a-icecream</span>
+            </div>
+            <div class="headCustomerPlace">
+                <span>Mustermannstraße1, 80331 München</span>
+            </div>
+            <div class="menuBar">
+                <img src="img/menu-4-32.png">
+            </div>
+        </div>
+    </div>
+    <div class="bodyContainer">
+        <div class="orderContainer">
+            <div class="orderHeadImg">
+                <div class="circleLogo">
+                    <img src="img/ice-cream-2-48.png">
+                    <span>Venezia</span>
+                </div>
+            </div>
+            <div class="descriptionShop">
+                <h1>Venezia</h1>
+                <span>Bei diesem Restaurant kannst Du Stempel sammeln. Stelle beim Bestellabschluss bitte sicher, dass
+                    Du Dich für unseren Newsletter angemeldet hast, um Deine Stempel per E-Mail zu erhalten.
+                </span>
+            </div>
+            <div class="menuSlider">
+                <a href="#"><img src="img/search-9-16.png"></a>
+                <a href="#Dauerbrenner">Dauerbrenner</a>
+                <a href="#Kugeleis">Kugeleis</a>
+                <a href="#Eisbecher">Eisbecher</a>
+                <a href="#"><img src="img/arrow-24-24.png"></a>
+
+            </div>
+            <div class="dishContainer">
+                <div class="headDishes" id="Dauerbrenner">
+                    <div class="dishPicture1">
+
+                    </div>
+                    <div class="dishsection">
+                        <h2>Dauerbrenner</h2>
+                    </div>
+                </div>
+
+                <div class="dish" onclick="addDish('Spaghettieis', '6.90')">
+                    <span>
+                        <h2>Spaghettieis</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price"> 6,90 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Bananensplit', '7.10')">
+                    <span>
+                        <h2>Bananensplit</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">7,10 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Amarenabecher', '7.90')">
+                    <span>
+                        <h2>Amarenabecher</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">7,90 €</div>
+                </div>
+
+            </div>
+            <div class="dishContainer">
+                <div class="headDishes" id="Kugeleis">
+                    <div class="dishPicture2">
+
+                    </div>
+                    <div class="dishsection">
+                        <h2>Kugeleis</h2>
+                    </div>
+                </div>
+                <div class="dish" onclick="addDish('Vanille', '1.50')">
+                    <span>
+                        <h2>Vanille</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">1,50 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Schokolade', '1.50')">
+                    <span>
+                        <h2>Schokolade</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">1,50 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Stracciatella', '1.50')">
+                    <span>
+                        <h2>Stracciatella</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">1,50 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Pistazie', '1.80')">
+                    <span>
+                        <h2>Pistazie</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">1,80 €</div>
+                </div>
+            </div>
+            <div class="dishContainer">
+                <div class="headDishes" id="Eisbecher">
+                    <div class="dishPicture3">
+
+                    </div>
+                    <div class="dishsection">
+                        <h2>Eisbecher</h2>
+                    </div>
+                </div>
+                <div class="dish" onclick="addDish('Schokobecher', '7.10')">
+                    <span>
+                        <h2>Schokobecher</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">7,10 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Erdbeerbecher', '7.60')">
+                    <span>
+                        <h2>Erdbeerbecher</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">7,60 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Kiwibecher', '7.60')">
+                    <span>
+                        <h2>Kiwibecher</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">7,60 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Amarettobecher', '8.10')">
+                    <span>
+                        <h2>Amarettobecher</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">8,10 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Nussbecher', '7.90')">
+                    <span>
+                        <h2>Nussbecher</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">7,90 €</div>
+                </div>
+                <div class="dish" onclick="addDish('Früchtebecher', '8.80')">
+                    <span>
+                        <h2>Früchtebecher</h2> <a href="#">Produktinfo</a>
+                    </span>
+                    <div class="price">8,80 €</div>
+                </div>
+            </div>
+        </div>
+        <div class="basketContainer" id="basketContainer">
+            <div class="basketHeadline">Warenkorb</div>
+            <div class="basket">
+                <div class="orderedDishes">
+                    <div class="orderedDishBlank" id="orderedDishBlank">
+                        <img src="img/cart-43-48.png">
+                        <span>Wähle leckere Gerichte aus der Karte <br>
+                            und bestelle Dein Menü.
+                        </span>
+                    </div>
+                    <div class="orderedDish" id="orderedDish">
+
+                    </div>
+                </div>
+                <div class="bill">
+                    <div class="billSum">
+                        <h3>Zwischensumme</h3>
+                        <div id="sum">0,00 €</div>
+                    </div>
+                    <div class="billSum" id="delieverSum">
+                        <h3>Lieferkosten</h3>
+                        <div>1,00 €</div>
+                    </div>
+                    <div class="billSum">
+                        <h3>Gesamt</h3>
+                        <div id="finalSum">0,00 €</div>
+                    </div>
+                    <div class="billSum" id="minimumMoney">
+
+                    </div>
+                </div>
+                <div class="minimumOrder" id="minimumOrderNon">
+                    Leider kannst Du noch nicht bestellen.<br>
+                    Venezia liefert erst ab einem Mindestbestellwert<br>
+                    von 10,00 € (exkl. Lieferkosten).
+                </div>
+                <div class="minimumOrder" id="minimumOrder">
+                    Du hast den Mindestbestellwert von 10,00 € erreicht
+                    und kannst jetzt fortfahren.
+                </div>
+                <button class="submitOrder" id ="orderButton">
+                    Bestellen
+                </button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="footer" id="footer">
+        <div>Ein Restaurant empfehlen</div>
+        <div>Jobs</div>
+        <div>AGB</div>
+        <div>Datenschutzerklärung</div>
+        <div>Impressum</div>
+    </div>
+</body>
+
+</html>
